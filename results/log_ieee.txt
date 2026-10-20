@@ -1,0 +1,578 @@
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] n=590540 d=397 alpha=0.001 kappa=0.1 t=80 groups>=2: 18  (224s)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] clean stream done (396s): contracts ff=2173.4
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] seed 0 done (639s)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] seed 1 done (862s)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] seed 2 done (1079s)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] seed 3 done (1292s)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py:113: RuntimeWarning: overflow encountered in cast
+  return um.clip(a, min, max, out=out, **kwargs)
+[ieee] seed 4 done (1504s)
+[ieee] finished in 1504s

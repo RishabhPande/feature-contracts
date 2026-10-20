@@ -1,0 +1,28 @@
+[cc] alpha=0.0001 done
+[cc] alpha=0.0003 done
+[cc] alpha=0.001 done
+[cc] alpha=0.003 done
+[cc] alpha=0.01 done
+[cc] alpha=0.03 done
+{
+ "all": {
+  "flags_per_100k": 12.28900222079826,
+  "pages_per_100k": 0.0
+ },
+ "h=0.5": {
+  "flags_per_100k": 7.900072856227452,
+  "pages_per_100k": 0.0
+ },
+ "h=1.0": {
+  "flags_per_100k": 4.3889293645708065,
+  "pages_per_100k": 0.0
+ },
+ "h=2.0": {
+  "flags_per_100k": 0.8777858729141613,
+  "pages_per_100k": 0.0
+ },
+ "h=5.0": {
+  "flags_per_100k": 0.8777858729141613,
+  "pages_per_100k": 0.0
+ }
+}

@@ -1,0 +1,8 @@
+[ccv] n=284807 d=38 alpha=0.001 kappa=0.1 t=25 groups>=2: 2  (16s)
+[ccv] clean stream done (27s): contracts ff=890.1
+[ccv] seed 0 done (70s)
+[ccv] seed 1 done (120s)
+[ccv] seed 2 done (160s)
+[ccv] seed 3 done (201s)
+[ccv] seed 4 done (243s)
+[ccv] finished in 243s

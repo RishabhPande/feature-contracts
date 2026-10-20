@@ -1,0 +1,8 @@
+[default] n=30000 d=23 alpha=0.01 kappa=0 t=8 groups>=2: 3  (2s)
+[default] clean stream done (3s): contracts ff=833.3
+[default] seed 0 done (14s)
+[default] seed 1 done (28s)
+[default] seed 2 done (43s)
+[default] seed 3 done (57s)
+[default] seed 4 done (71s)
+[default] finished in 71s

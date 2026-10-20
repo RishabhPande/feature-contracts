@@ -1,0 +1,150 @@
+{
+  "alpha": {
+    "baf": 0.0001,
+    "cc": 0.001,
+    "ccv": 0.001,
+    "default": 0.01,
+    "ieee": 0.001,
+    "synthetic": 0.001
+  },
+  "breadth": [
+    1,
+    5
+  ],
+  "burn_in": 5000,
+  "calibration": "grid",
+  "clip_quantile": 0.9,
+  "decision": {
+    "breadth": [
+      1,
+      5
+    ],
+    "faults": [
+      "magnitude",
+      "scale",
+      "encoding",
+      "misjoin"
+    ],
+    "fpr": 0.01,
+    "prevalence": [
+      0.1,
+      1.0
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "default_shuffle_seed": 0,
+  "discrete_max_values": 50,
+  "faults": [
+    "magnitude",
+    "scale",
+    "encoding",
+    "default_fill",
+    "stale",
+    "misjoin",
+    "clipping",
+    "inconsistency",
+    "nan_fill"
+  ],
+  "kappa_grid": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    34,
+    55
+  ],
+  "min_changed": 5,
+  "noise_sd": 1.0,
+  "paging": {
+    "A": 10000000.0,
+    "default_tier": "hard",
+    "extra_A": [
+      1000.0,
+      10000.0
+    ],
+    "p0_floor": 1e-06,
+    "p1_floor": 0.005,
+    "p1_mult": 10.0,
+    "residual_hard_mult": 2.0,
+    "severity_h": 1.0,
+    "test": "sr",
+    "wilson_z": 1.96
+  },
+  "paper_faults": [
+    "magnitude",
+    "scale",
+    "encoding",
+    "default_fill",
+    "stale",
+    "misjoin",
+    "clipping",
+    "inconsistency"
+  ],
+  "prevalence": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "psi": {
+    "bins": 10,
+    "level": 0.25,
+    "window": 1000
+  },
+  "rate": {
+    "margins": [
+      1.25,
+      1.5,
+      2,
+      3,
+      5,
+      8
+    ],
+    "tail": 1e-06,
+    "window": 500
+  },
+  "scale_factor": 1000.0,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "splits": {
+    "fit_share_of_reference": 0.8,
+    "reference": 0.6
+  },
+  "t_grid": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    15,
+    25,
+    40,
+    80,
+    160
+  ],
+  "version": "2.0.0",
+  "window": {
+    "baf": 10000,
+    "cc": 10000,
+    "ccv": 10000,
+    "default": 3000,
+    "ieee": 10000,
+    "synthetic": 5000
+  }
+}

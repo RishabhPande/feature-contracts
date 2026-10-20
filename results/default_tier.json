@@ -1,0 +1,22 @@
+{
+  "all": {
+    "flags_per_100k": 833.3333333333334,
+    "pages_per_100k": 0.0
+  },
+  "h=0.5": {
+    "flags_per_100k": 75.0,
+    "pages_per_100k": 0.0
+  },
+  "h=1.0": {
+    "flags_per_100k": 50.0,
+    "pages_per_100k": 0.0
+  },
+  "h=2.0": {
+    "flags_per_100k": 50.0,
+    "pages_per_100k": 0.0
+  },
+  "h=5.0": {
+    "flags_per_100k": 50.0,
+    "pages_per_100k": 0.0
+  }
+}

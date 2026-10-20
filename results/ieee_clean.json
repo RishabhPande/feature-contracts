@@ -1,0 +1,82 @@
+{
+  "dataset": "ieee",
+  "n_test": 236216,
+  "d": 397,
+  "alpha": 0.001,
+  "kappa": 0.1,
+  "t": 80,
+  "kappa_domain": 0.1,
+  "cal_flag_rate": {
+    "schema": 0.0,
+    "minmax": 0.0,
+    "autoprofile": 0.0,
+    "robust_z": 0.0009877936922317082,
+    "iforest": 0.0009877936922317082,
+    "pca_recon": 0.0009877936922317082,
+    "conformance": 0.0009877936922317082,
+    "contracts_domain": 0.00022578141536724758,
+    "contracts": 0.0007479009384040076
+  },
+  "false_flags_per_100k": {
+    "schema": 0.0,
+    "minmax": 3219.087614725506,
+    "autoprofile": 3529.8201645951162,
+    "robust_z": 472.0256036847631,
+    "iforest": 765.4011582619298,
+    "pca_recon": 822.1288989738207,
+    "conformance": 819.5888508822434,
+    "contracts_domain": 2072.6792427269957,
+    "contracts": 2173.4344836928913
+  },
+  "false_pages_per_100k": {
+    "minmax|pooled": 891.1335387950012,
+    "autoprofile|pooled": 974.5317844684525,
+    "robust_z|pooled": 41.91079351102381,
+    "iforest|pooled": 88.90168320520202,
+    "pca_recon|pooled": 99.06187557151083,
+    "conformance|pooled": 96.94516882852982,
+    "contracts|all": 4619.07745453314,
+    "contracts|hard": 4266.857452501101,
+    "contracts|cusum": 4530.175771327937,
+    "contracts|hard_A1000": 7051.596843566906,
+    "contracts|all_A1000": 7711.586006028381,
+    "contracts|hard_A10000": 5419.615944728554,
+    "contracts|all_A10000": 5952.179361262573,
+    "contracts|every": 22540.38676465608,
+    "contracts|rates": 294.2222372743591,
+    "psi": 1887.6790733904563
+  },
+  "flag_bursts": {
+    "schema": 0,
+    "minmax": 6491,
+    "autoprofile": 7041,
+    "robust_z": 734,
+    "iforest": 1010,
+    "pca_recon": 1126,
+    "conformance": 1122,
+    "contracts_domain": 3946,
+    "contracts": 4170
+  },
+  "top_false_flag_features": [
+    [
+      "D11",
+      2388
+    ],
+    [
+      "V323",
+      1370
+    ],
+    [
+      "V324",
+      1362
+    ],
+    [
+      "V330",
+      1357
+    ],
+    [
+      "V329",
+      1350
+    ]
+  ]
+}
