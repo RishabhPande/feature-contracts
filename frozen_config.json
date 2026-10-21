@@ -12,6 +12,10 @@
     5
   ],
   "burn_in": 5000,
+  "burst": {
+    "min_run": 20,
+    "run_mult": 2.0
+  },
   "calibration": "grid",
   "clip_quantile": 0.9,
   "decision": {
@@ -38,6 +42,10 @@
   },
   "default_shuffle_seed": 0,
   "discrete_max_values": 50,
+  "drift_screen": {
+    "sample": 20000,
+    "spearman_abs": 0.3
+  },
   "faults": [
     "magnitude",
     "scale",
@@ -47,7 +55,9 @@
     "misjoin",
     "clipping",
     "inconsistency",
-    "nan_fill"
+    "nan_fill",
+    "stale_lag",
+    "misjoin_ref"
   ],
   "kappa_grid": [
     0,
@@ -138,7 +148,7 @@
     80,
     160
   ],
-  "version": "2.0.0",
+  "version": "3.0.0",
   "window": {
     "baf": 10000,
     "cc": 10000,

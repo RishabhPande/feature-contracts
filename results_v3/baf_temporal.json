@@ -1,0 +1,50 @@
+[
+  {
+    "origin": 0.4,
+    "n_test": 150000,
+    "contracts_flags": 10.666666666666666,
+    "contracts_pages_hard": 0.0,
+    "contracts_pages_burst": 0.0,
+    "contracts_ds_flags": 10.666666666666666,
+    "contracts_ds_pages_hard": 0.0,
+    "contracts_ds_pages_burst": 0.0,
+    "exempt": 0,
+    "autoprofile_flags": 10.0
+  },
+  {
+    "origin": 0.55,
+    "n_test": 150000,
+    "contracts_flags": 1.3333333333333333,
+    "contracts_pages_hard": 0.0,
+    "contracts_pages_burst": 0.0,
+    "contracts_ds_flags": 1.3333333333333333,
+    "contracts_ds_pages_hard": 0.0,
+    "contracts_ds_pages_burst": 0.0,
+    "exempt": 1,
+    "autoprofile_flags": 16.0
+  },
+  {
+    "origin": 0.7,
+    "n_test": 150000,
+    "contracts_flags": 0.0,
+    "contracts_pages_hard": 0.0,
+    "contracts_pages_burst": 0.0,
+    "contracts_ds_flags": 10.0,
+    "contracts_ds_pages_hard": 0.0,
+    "contracts_ds_pages_burst": 0.0,
+    "exempt": 1,
+    "autoprofile_flags": 6.666666666666667
+  },
+  {
+    "origin": 0.85,
+    "n_test": 150000,
+    "contracts_flags": 2.0,
+    "contracts_pages_hard": 0.0,
+    "contracts_pages_burst": 0.0,
+    "contracts_ds_flags": 2.0,
+    "contracts_ds_pages_hard": 0.0,
+    "contracts_ds_pages_burst": 0.0,
+    "exempt": 1,
+    "autoprofile_flags": 10.0
+  }
+]

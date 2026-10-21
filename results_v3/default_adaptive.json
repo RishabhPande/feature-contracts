@@ -1,0 +1,125 @@
+{
+ "alpha": 0.01,
+ "n_test": 12000,
+ "q0": 0.6204366461300128,
+ "rate_alarms": 0,
+ "rate_alarms_per_m": 0.0,
+ "variants": {
+  "fixed": {
+   "ff_per_m": 8750.0,
+   "ff_by_sixth_per_m": [
+    9000.0,
+    9500.0,
+    10000.0,
+    10500.0,
+    9000.0,
+    4500.0
+   ],
+   "violation_pages": 0,
+   "violation_pages_per_m": 0.0,
+   "pages_by_sixth": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "q_end": 0.6204366461300128,
+   "q_max": 0.6204366461300128,
+   "recall": 0.49632463755333184,
+   "recall_q1": 0.4948910949423815,
+   "recall_q4": 0.49561911052896335,
+   "recall_systemic_q1": 0.5136777525896733,
+   "recall_systemic_q4": 0.5141197630710734,
+   "event_detection": 0.65625
+  },
+  "aci_0.01": {
+   "ff_per_m": 10416.666666666666,
+   "ff_by_sixth_per_m": [
+    9500.0,
+    12000.0,
+    10000.0,
+    10500.0,
+    9000.0,
+    11500.0
+   ],
+   "violation_pages": 0,
+   "violation_pages_per_m": 0.0,
+   "pages_by_sixth": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "q_end": 0.611136646130146,
+   "q_max": 0.6712366461300616,
+   "recall": 0.3619910966322705,
+   "recall_q1": 0.41725373623173684,
+   "recall_q4": 0.33349768639565697,
+   "recall_systemic_q1": 0.38771868282601835,
+   "recall_systemic_q4": 0.25632732210158143,
+   "event_detection": 0.625
+  },
+  "aci_0.05": {
+   "ff_per_m": 10583.333333333334,
+   "ff_by_sixth_per_m": [
+    10500.0,
+    10500.0,
+    11000.0,
+    10500.0,
+    9500.0,
+    11500.0
+   ],
+   "violation_pages": 0,
+   "violation_pages_per_m": 0.0,
+   "pages_by_sixth": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "q_end": 0.673936646130655,
+   "q_max": 0.7829366461300762,
+   "recall": 0.3356124197233221,
+   "recall_q1": 0.35393238066327104,
+   "recall_q4": 0.3238846846354106,
+   "recall_systemic_q1": 0.29019348898661174,
+   "recall_systemic_q4": 0.25576562083287285,
+   "event_detection": 0.46875
+  },
+  "aci_0.05_guard": {
+   "ff_per_m": 10583.333333333334,
+   "ff_by_sixth_per_m": [
+    10500.0,
+    10500.0,
+    11000.0,
+    10500.0,
+    9500.0,
+    11500.0
+   ],
+   "violation_pages": 0,
+   "violation_pages_per_m": 0.0,
+   "pages_by_sixth": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "q_end": 0.673936646130655,
+   "q_max": 0.7829366461300762,
+   "recall": 0.3462932005598189,
+   "recall_q1": 0.39241035001193003,
+   "recall_q4": 0.3238707957465217,
+   "recall_systemic_q1": 0.3671494276839297,
+   "recall_systemic_q4": 0.2557378430550951,
+   "event_detection": 0.46875
+  }
+ }
+}

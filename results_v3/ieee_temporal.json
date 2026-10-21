@@ -1,0 +1,50 @@
+[
+  {
+    "origin": 0.4,
+    "n_test": 88581,
+    "contracts_flags": 2053.487768257301,
+    "contracts_pages_hard": 889.5812871834818,
+    "contracts_pages_burst": 765.4011582619298,
+    "contracts_ds_flags": 2053.487768257301,
+    "contracts_ds_pages_hard": 889.5812871834818,
+    "contracts_ds_pages_burst": 765.4011582619298,
+    "exempt": 0,
+    "autoprofile_flags": 2218.3086666440886
+  },
+  {
+    "origin": 0.55,
+    "n_test": 88581,
+    "contracts_flags": 887.3234666576354,
+    "contracts_pages_hard": 532.8456440997505,
+    "contracts_pages_burst": 529.458913310981,
+    "contracts_ds_flags": 887.3234666576354,
+    "contracts_ds_pages_hard": 532.8456440997505,
+    "contracts_ds_pages_burst": 529.458913310981,
+    "exempt": 0,
+    "autoprofile_flags": 1505.966290739549
+  },
+  {
+    "origin": 0.7,
+    "n_test": 88581,
+    "contracts_flags": 1008.1168647904178,
+    "contracts_pages_hard": 2257.8205258464004,
+    "contracts_pages_burst": 1766.7445614748083,
+    "contracts_ds_flags": 1008.1168647904178,
+    "contracts_ds_pages_hard": 2257.8205258464004,
+    "contracts_ds_pages_burst": 1766.7445614748083,
+    "exempt": 0,
+    "autoprofile_flags": 2099.7730890371527
+  },
+  {
+    "origin": 0.85,
+    "n_test": 88581,
+    "contracts_flags": 2208.1484742777798,
+    "contracts_pages_hard": 11878.393786477913,
+    "contracts_pages_burst": 5781.149456429709,
+    "contracts_ds_flags": 2208.1484742777798,
+    "contracts_ds_pages_hard": 11878.393786477913,
+    "contracts_ds_pages_burst": 5781.149456429709,
+    "exempt": 0,
+    "autoprofile_flags": 3602.352648987932
+  }
+]

@@ -23,7 +23,7 @@ def reference_stats(X_ref):
 
 
 def inject(Xw, fault, features, prevalence, rng, ref, scale=None, clip_q=None,
-           noise_sd=None):
+           noise_sd=None, pool=None, lag=1000):
     X = Xw.copy()
     n = X.shape[0]
     k = max(1, int(round(prevalence * n)))
@@ -45,9 +45,19 @@ def inject(Xw, fault, features, prevalence, rng, ref, scale=None, clip_q=None,
             v = np.full(k, col[0])          # frozen at the value when the fault began
         elif fault == "misjoin":
             v = rng.permutation(v)
+        elif fault == "misjoin_ref":
+            # value of a random other record from the reference: marginal preserved exactly
+            src = pool if pool is not None else Xw
+            v = src[rng.integers(0, len(src), size=k), j]
+        elif fault == "stale_lag":
+            # served from a cache lagging by `lag` requests: plausible values, wrong time
+            v = col[np.maximum(rows - lag, 0)]
         elif fault == "clipping":
             q = ref["q90"][j] if clip_q is None else clip_q[j]
             v = np.minimum(v, q)
+        elif fault == "shift":
+            # upstream calibration offset: +1 reference s.d., clipped to the reference range
+            v = np.clip(v + ref["sd"][j], ref["lo"][j], ref["hi"][j])
         elif fault == "inconsistency":
             sd = ref["sd"][j] * (noise_sd or CONFIG["noise_sd"])
             v = np.clip(v + rng.normal(scale=sd, size=k), ref["lo"][j], ref["hi"][j])

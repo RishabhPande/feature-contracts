@@ -1,0 +1,91 @@
+{
+  "dataset": "cc",
+  "n_test": 113923,
+  "d": 29,
+  "alpha": 0.001,
+  "kappa": 0.1,
+  "t": 25,
+  "kappa_domain": 0.1,
+  "cal_flag_rate": {
+    "schema": 0.0,
+    "minmax": 0.0,
+    "autoprofile": 0.0,
+    "robust_z": 0.000994821078503087,
+    "iforest": 0.000994821078503087,
+    "pca_recon": 0.000994821078503087,
+    "conformance": 0.000994821078503087,
+    "contracts_domain": 0.0004388916522807736,
+    "contracts": 0.0004388916522807736,
+    "contracts_ds": 0.0004388916522807736
+  },
+  "false_flags_per_100k": {
+    "schema": 0.0,
+    "minmax": 23.700218568682356,
+    "autoprofile": 23.700218568682356,
+    "robust_z": 148.34581252249328,
+    "iforest": 53.544938247763845,
+    "pca_recon": 210.6686094993987,
+    "conformance": 116.74552109758346,
+    "contracts_domain": 12.28900222079826,
+    "contracts": 12.28900222079826,
+    "contracts_ds": 12.28900222079826
+  },
+  "false_pages_per_100k": {
+    "minmax|pooled": 0.8777858729141613,
+    "autoprofile|perfeature": 0.8777858729141613,
+    "autoprofile|pooled": 0.8777858729141613,
+    "robust_z|pooled": 0.0,
+    "iforest|pooled": 0.0,
+    "pca_recon|pooled": 2.633357618742484,
+    "conformance|pooled": 0.0,
+    "contracts|all": 24.57800444159652,
+    "contracts|hard": 24.57800444159652,
+    "contracts|cusum": 24.57800444159652,
+    "contracts|hard_A1000": 24.57800444159652,
+    "contracts|all_A1000": 26.33357618742484,
+    "contracts|hard_A10000": 24.57800444159652,
+    "contracts|all_A10000": 25.45579031451068,
+    "contracts|every": 27.211362060339003,
+    "contracts|burst": 24.57800444159652,
+    "contracts|pooled": 0.0,
+    "contracts_ds|hard": 24.57800444159652,
+    "contracts_ds|burst": 24.57800444159652,
+    "contracts|rates": 24.57800444159652,
+    "psi": 749.6291354686938
+  },
+  "flag_bursts": {
+    "schema": 0,
+    "minmax": 27,
+    "autoprofile": 27,
+    "robust_z": 169,
+    "iforest": 61,
+    "pca_recon": 234,
+    "conformance": 130,
+    "contracts_domain": 14,
+    "contracts": 14,
+    "contracts_ds": 14
+  },
+  "top_false_flag_features": [
+    [
+      "V20",
+      7
+    ],
+    [
+      "V16",
+      3
+    ],
+    [
+      "V23",
+      3
+    ],
+    [
+      "V11",
+      3
+    ],
+    [
+      "V25",
+      3
+    ]
+  ],
+  "exempt_features": []
+}

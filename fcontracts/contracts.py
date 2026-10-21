@@ -68,7 +68,7 @@ def top3_from_evidence(ev, viol):
 
 class FeatureContract:
     def __init__(self, groups, alpha, relations=True, calibration=None,
-                 tier="hard", h=None):
+                 tier="hard", h=None, drift_screen=False):
         self.groups = [list(g) for g in groups if len(g) >= 2] if relations else []
         self.alpha = alpha
         self.relations = relations
@@ -76,6 +76,7 @@ class FeatureContract:
         self.tier = tier
         self.h = CONFIG["paging"]["severity_h"] if h is None else h
         self.rmult = CONFIG["paging"]["residual_hard_mult"]
+        self.drift_screen = drift_screen
         self.version = None
 
     # ------------------------------------------------------------------ learn
@@ -102,9 +103,27 @@ class FeatureContract:
         self.s = np.nan_to_num(s, nan=1.0)
         self.lo = np.nan_to_num(self.lo, nan=0.0)
         self.hi = np.nan_to_num(self.hi, nan=0.0)
+        # nullability (v3): a feature never missing in the reference may not be missing
+        self.non_nullable = ~np.isnan(X_ref).any(0)
+        # drift screen (v3): exempt features that trend with time in the reference
+        self.exempt = np.zeros(d, bool)
+        self.trend = np.zeros(d)
+        if self.drift_screen:
+            from scipy.stats import spearmanr
+            m = CONFIG["drift_screen"]
+            idx = np.linspace(0, len(X_ref) - 1, min(m["sample"], len(X_ref))).astype(int)
+            for j in range(d):
+                col = X_ref[idx, j]
+                ok = ~np.isnan(col)
+                if ok.sum() > 100 and np.nanstd(col[ok]) > 0:
+                    rho = spearmanr(idx[ok], col[ok]).statistic
+                    self.trend[j] = 0.0 if np.isnan(rho) else rho
+            self.exempt = np.abs(self.trend) >= m["spearman_abs"]
 
         # domain margin
         ex_cal, unseen_cal = self._exceed(X_cal)
+        if self.calibration == "conformal1":
+            return self._fit_single_score(X_fit, X_cal, ex_cal, unseen_cal)
         if self.calibration == "conformal":
             req = np.where(self.discrete[None, :], np.where(unseen_cal, np.inf, 0.0), ex_cal).max(1)
             k = conformal_threshold(req, self.alpha / 2)
@@ -156,6 +175,8 @@ class FeatureContract:
         self.p0_hard = wil(np.bincount(res.hard_cols, minlength=d))
         self.p0_all = wil(np.bincount(res.viol_cols, minlength=d))
         self.p0 = self.p0_hard if self.tier == "hard" else self.p0_all
+        from .paging import onset_stats
+        self.p0_onset, self.max_run = onset_stats(res.viol_rows, res.viol_cols, d, n)
         self.cal_flag_rate = res.flag.mean()
 
         # rate checks
@@ -163,19 +184,101 @@ class FeatureContract:
         self.version = f"v{abs(hash((self.kappa, self.t, d))) % 10**8:08d}"
         return self
 
+    # ---------------------------------------------- exact single-score option
+    def _fit_single_score(self, X_fit, X_cal, ex_cal, unseen_cal):
+        """Exact split-conformal calibration of the full rule (post-confirmation option).
+
+        Score s(x) = max(domain exceedance in spreads, max residual / b), with +inf for an
+        unseen category or a nullability violation. The relation transform clips to the fit
+        envelope (kappa = 0) and b is set on the fit slice, so the score is fixed before the
+        calibration slice is used; one conformal quantile q at level alpha then gives
+        P(flag) <= alpha for an exchangeable clean request. kappa = q and tau = b q.
+        """
+        d = self.d
+        # value sets and nullability from the fit slice only, so calibration scores are exchangeable
+        # with new requests (the grid rule learns them on fit + calibration)
+        self.discrete = np.zeros(d, bool)
+        self.support = [None] * d
+        for j in range(d):
+            col = X_fit[:, j]
+            col = col[~np.isnan(col)]
+            if col.size and np.all(np.mod(col, 1) == 0):
+                u = np.unique(col)
+                if u.size <= CONFIG["discrete_max_values"]:
+                    self.discrete[j] = True
+                    self.support[j] = u
+        self.non_nullable = ~np.isnan(X_fit).any(0)
+        ex_cal, unseen_cal = self._exceed(X_cal)
+        self.kappa = 0.0
+        self.env_lo, self.env_hi = self.lo.copy(), self.hi.copy()
+        self.rel = []
+        for g in self.groups:
+            Z = self._transform(X_fit, g, fit=True)
+            lw = LedoitWolf().fit(Z)
+            P = np.linalg.pinv(lw.covariance_)
+            diag = np.sqrt(np.clip(np.diag(P), 1e-12, None))
+            R = (Z @ P) / diag
+            sd = R.std(0)
+            sd = np.where(sd > 0, sd, 1.0)
+            self.rel.append({"g": np.array(g), "P": P, "diag": diag, "sd": sd, "tf": self._tf_last})
+        if self.rel:
+            rfit = self._max_abs_resid(X_fit)
+            self.b = float(max(np.quantile(rfit, 1 - self.alpha / 2), 1e-6))
+        else:
+            self.b = math.inf
+        sc = self.score(X_cal)
+        self.q = conformal_threshold(sc, self.alpha)
+        self.cal_scores = np.sort(sc[np.isfinite(sc)])
+        self.kappa = self.q if math.isfinite(self.q) else KAPPA_GRID[-1]
+        self.t = self.b * self.q if (self.rel and math.isfinite(self.q)) else math.inf
+        # domain envelope for checking; relation clipping keeps the fit envelope stored in tf
+        self.env_lo = self.lo - self.kappa * self.s
+        self.env_hi = self.hi + self.kappa * self.s
+        res = self.check(X_cal)
+        n = X_cal.shape[0]
+        z = CONFIG["paging"]["wilson_z"]
+        wil = lambda cnt: np.array([max(wilson_upper(c, n, z), CONFIG["paging"]["p0_floor"]) for c in cnt])
+        self.p0_hard = wil(np.bincount(res.hard_cols, minlength=d))
+        self.p0_all = wil(np.bincount(res.viol_cols, minlength=d))
+        self.p0 = self.p0_hard if self.tier == "hard" else self.p0_all
+        from .paging import onset_stats
+        self.p0_onset, self.max_run = onset_stats(res.viol_rows, res.viol_cols, d, n)
+        self.cal_flag_rate = res.flag.mean()
+        self.rates = RateCheck().fit(X_fit, X_cal)
+        self.version = f"c1{abs(hash((self.q, d))) % 10**8:08d}"
+        return self
+
+    def score(self, X, chunk=20000):
+        """Per-request single score (requires the conformal1 fit or a fitted b)."""
+        out = np.zeros(X.shape[0])
+        for a in range(0, X.shape[0], chunk):
+            Xc = X[a:a + chunk]
+            ex, unseen = self._exceed(Xc)
+            dom = np.where(self.discrete[None, :], 0.0, ex).max(1)
+            dom = np.where(unseen.any(1), np.inf, dom)
+            if self.rel and math.isfinite(self.b):
+                dom = np.maximum(dom, self._max_abs_resid(Xc) / self.b)
+            out[a:a + chunk] = dom
+        return out
+
     def _exceed(self, X):
         below = (self.lo - X) / self.s
         above = (X - self.hi) / self.s
         ex = np.fmax(below, above)
         ex = np.where(np.isnan(ex), 0.0, np.maximum(ex, 0.0))
         unseen = np.zeros(X.shape, bool)
-        for j in np.flatnonzero(self.discrete):
+        if getattr(self, "exempt", None) is not None and self.exempt.any():
+            ex[:, self.exempt] = 0.0
+        for j in np.flatnonzero(self.discrete & ~getattr(self, "exempt", np.zeros(self.d, bool))):
             col = X[:, j]
             unseen[:, j] = ~np.isnan(col) & ~np.isin(col, self.support[j])
+        nn = getattr(self, "non_nullable", None)
+        if nn is not None and nn.any():
+            unseen[:, nn] |= np.isnan(X[:, nn])      # missing where never missing
         return ex, unseen
 
     def _domain_viol(self, ex, unseen, kappa):
-        return np.where(self.discrete[None, :], unseen, ex > kappa)
+        return np.where(self.discrete[None, :], unseen, ex > kappa) | unseen
 
     def _transform(self, X, g, fit=False):
         Xg = X[:, g]
@@ -215,9 +318,9 @@ class FeatureContract:
             Xc = X[a:b]
             ex, unseen = self._exceed(Xc)
             dom = self._domain_viol(ex, unseen, self.kappa)
-            excess = np.where(self.discrete[None, :], np.where(unseen, UNSEEN_EXCESS, 0.0),
-                              np.maximum(ex - self.kappa, 0.0))
-            hard = np.where(self.discrete[None, :], unseen, dom & (excess >= self.h))
+            excess = np.where(unseen, UNSEEN_EXCESS,
+                              np.where(self.discrete[None, :], 0.0, np.maximum(ex - self.kappa, 0.0)))
+            hard = unseen | (dom & (excess >= self.h))
             absr = np.zeros(Xc.shape)
             if use_relations:
                 for r in self.rel:

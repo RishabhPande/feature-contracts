@@ -9,7 +9,7 @@ T_GRID = [3, 4, 5, 6, 8, 10, 15, 25, 40, 80, 160]
 RATE_MARGINS = [1.25, 1.5, 2, 3, 5, 8]
 
 CONFIG = {
-    "version": "2.0.0",
+    "version": "3.0.0",
     "splits": {"reference": 0.60, "fit_share_of_reference": 0.80},
     "discrete_max_values": 50,
     "kappa_grid": KAPPA_GRID,
@@ -26,7 +26,7 @@ CONFIG = {
                "baf": 10000, "synthetic": 5000},
     "burn_in": 5000,
     "faults": ["magnitude", "scale", "encoding", "default_fill", "stale",
-               "misjoin", "clipping", "inconsistency", "nan_fill"],
+               "misjoin", "clipping", "inconsistency", "nan_fill", "stale_lag", "misjoin_ref"],
     "paper_faults": ["magnitude", "scale", "encoding", "default_fill", "stale",
                      "misjoin", "clipping", "inconsistency"],
     "prevalence": [0.01, 0.10, 1.0],
@@ -40,6 +40,9 @@ CONFIG = {
     "decision": {"fpr": 0.01, "faults": ["magnitude", "scale", "encoding", "misjoin"],
                  "prevalence": [0.10, 1.0], "breadth": [1, 5], "seeds": [0, 1, 2]},
     "default_shuffle_seed": 0,
+    # v3 additions, fixed before the Bank Account Fraud confirmation
+    "drift_screen": {"spearman_abs": 0.3, "sample": 20000},
+    "burst": {"min_run": 20, "run_mult": 2.0},
 }
 
 
