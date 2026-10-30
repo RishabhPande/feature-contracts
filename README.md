@@ -5,6 +5,27 @@ tables on the credit card (cc), credit card plus velocity (ccv) and default of
 credit card clients (default) datasets, and runs the frozen-configuration
 confirmation on IEEE-CIS and Bank Account Fraud.
 
+## How the package fits together
+
+Conceptual workflow diagram of the code in this repo. It shows no data and no results.
+
+```mermaid
+flowchart LR
+    D["Public datasets<br/>placed under data/ (not committed)"] --> L["fcontracts/data.py<br/>loaders, splits, velocity features"]
+    L --> R["Reference window (first 60%)"]
+    L --> T["Test stream (last 40%)"]
+    R --> C["fcontracts/contracts.py<br/>learn and calibrate a contract"]
+    T --> I["fcontracts/inject.py<br/>corruption operators"]
+    I --> K["Online check and paging<br/>contracts.py, paging.py"]
+    C --> K
+    I --> B["fcontracts/baselines.py<br/>comparison detectors"]
+    R --> B
+    K --> E["run_experiments.py, decision.py, sweeps.py<br/>closedloop.py, latency.py"]
+    B --> E
+    E --> O["results/, results_v3/<br/>CSV and JSON"]
+    O --> F["make_tables.py, make_figs.py<br/>tables/ and figs/"]
+```
+
 ## Data (never commit data files)
 
 Put the files under `data/`:
