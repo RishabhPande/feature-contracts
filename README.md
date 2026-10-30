@@ -10,7 +10,7 @@ confirmation on IEEE-CIS and Bank Account Fraud.
 Conceptual workflow diagram of the code in this repo. It shows no data and no results.
 
 ```mermaid
-flowchart LR
+flowchart TB
     D["Public datasets<br/>placed under data/ (not committed)"] --> L["fcontracts/data.py<br/>loaders, splits, velocity features"]
     L --> R["Reference window (first 60%)"]
     L --> T["Test stream (last 40%)"]
