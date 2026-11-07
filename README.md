@@ -47,19 +47,44 @@ pip install -r requirements.txt      # pinned versions; Python 3.13
 Tested with Python 3.13, NumPy 2.5, pandas 3.0, scikit-learn 1.9. IEEE-CIS needs
 about 6 GB of memory; the others under 2 GB.
 
-## Run (reproduces every table and figure in the manuscript)
+## Package completeness: check before running
+
+The current public checkout is **not a complete end-to-end reproduction package**.
+The v3 orchestration scripts (`run_v3.sh`, `run_v3_ext.sh`, `run_v3_ext2.sh`),
+`sensitivity.py`, `temporal.py`, and `results_v3/code_hashes_baf_freeze.txt`
+are not included. They are listed below as missing, not runnable commands.
+Do not infer their implementation or replace the missing freeze record with a
+hash of today's code.
+
+The committed v3 run CSVs also lack the `*_clean_flags.npz` and
+`*_clean_pages.json` companions that `analysis_v3.py` reads unconditionally.
+Existing summary/result files are not evidence that a fresh checkout can
+regenerate them. Restoring those inputs and the missing drivers requires the
+original experiment material; this documentation update does not supply it.
+
+Run this dependency-free inventory before downloading datasets or starting a
+long experiment:
+
+```bash
+python3 check_package.py          # exits 1 while inventoried files are missing
+python3 check_package.py --json   # machine-readable inventory; same exit status
+python3 -m unittest discover -s tests -v  # tests the inventory, not the experiments
+```
+
+The check reads file presence only. It does not validate datasets, install
+pinned dependencies, verify frozen hashes, test result values, or prove that a
+present script succeeds. It does not change files or run experiments.
+
+## Available run entry points (not a complete reproduction recipe)
 
 ```bash
 sh run_public.sh        # v2 results for cc, ccv, default (decision table, budget sweeps)  -> results/
-sh run_v3.sh            # v3 benchmark, closed loop, sensitivity, temporal windows        -> results_v3/
 python3 paging_sim.py   # controlled paging simulation                                    -> results_v3/paging_sim.json
 python3 sweeps.py --dataset baf  --seeds 0 1 2 --prevalence 0.1 --out results_v3
 python3 sweeps.py --dataset ieee --seeds 0 1 2 --prevalence 0.1 --out results_v3
 python3 refresh.py --dataset ieee --out results_v3
 python3 latency.py --out results_v3
 python3 analysis_v3.py                     # -> results_v3/summary_v3.json
-sh run_v3_ext.sh        # post-confirmation analyses: exact conformal, adaptive calibration, closed loop with recovery
-sh run_v3_ext2.sh       # correlated (lineage-group) faults and ten extra fault seeds
 python3 adaptive.py --dataset ieee --discrete-max 10 --out results_v3
 python3 overhead.py --out results_v3       # check time and contract size on each dataset
 python3 make_tables.py --out tables        # every results table as LaTeX
@@ -67,7 +92,13 @@ python3 make_tables_ext.py --out tables    # tables for the post-confirmation an
 python3 make_figs.py --out figs            # every figure
 ```
 
-Approximate run times on a 2-core laptop: public datasets about 1 hour; IEEE-CIS about 3 hours; Bank Account Fraud about 1 hour.
+The omitted commands `sh run_v3.sh`, `sh run_v3_ext.sh` and
+`sh run_v3_ext2.sh` are not runnable from this checkout. The available commands
+above still need their documented datasets and inputs; in particular,
+`analysis_v3.py` needs the missing per-request flags and pages described above.
+No replacement workflow is claimed here.
+
+Approximate run times reported for a 2-core laptop: public datasets about 1 hour; IEEE-CIS about 3 hours; Bank Account Fraud about 1 hour.
 
 ## Seeds and preprocessing
 
@@ -84,7 +115,7 @@ post-confirmation analyses; they add options (`calibration="conformal1"`, the `g
 ## Confirmation hashes
 
 `results/code_hashes_ieee_freeze.txt` (v2 configuration, before IEEE-CIS was loaded) and
-`results_v3/code_hashes_baf_freeze.txt` (v3 configuration, before Bank Account Fraud was read).
+`results_v3/code_hashes_baf_freeze.txt` (v3 configuration, before Bank Account Fraud was read; not included in this checkout).
 
 ## Files
 
@@ -102,8 +133,8 @@ post-confirmation analyses; they add options (`calibration="conformal1"`, the `g
 | `latency.py` | Per-request cost at 100, 1,000 and 10,000 features | 6.4 |
 | `analysis.py` | Tables, Wilcoxon with Holm, bootstrap intervals | 6, Table 11 |
 | `closedloop.py` | Closed loop: page -> fallback response, decision costs, unnecessary fallback | 6.5 |
-| `sensitivity.py` | Fault duration and intermittent persistence | 6.4 |
-| `temporal.py` | Rolling-origin temporal windows | 6.6 |
+| `sensitivity.py` (not included) | Fault duration and intermittent persistence | 6.4 |
+| `temporal.py` (not included) | Rolling-origin temporal windows | 6.6 |
 | `refresh.py` | Exploratory periodic contract refresh (IEEE-CIS) | 6.6 |
 | `paging_sim.py` | Controlled simulation: per-violation vs burst-aware paging | 6.3, App. B |
 | `conformal_eval.py` | Exact single-score conformal calibration vs the two-step rule; exchangeable control | 4.2, 6.8 |
