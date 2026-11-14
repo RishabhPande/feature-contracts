@@ -26,6 +26,37 @@ flowchart TB
     O --> F["make_tables.py, make_figs.py<br/>tables/ and figs/"]
 ```
 
+## Quickstart on synthetic data (no downloads)
+
+```bash
+pip install numpy scipy scikit-learn matplotlib
+python3 examples/quickstart_synthetic.py --fig docs/quickstart_synthetic.png
+```
+
+The script learns a contract on a small generated stream, then swaps in values from
+other records for one feature over a 1,500-request window. Every swapped value is
+individually plausible, so a range check sees nothing; the break shows up in the
+relation between `amount` and `amount_x2`. The figure shows the violations and the
+pages raised.
+
+![Synthetic quickstart: violations and pages during a fault window](docs/quickstart_synthetic.png)
+
+Everything in the figure is generated. It shows how the pieces connect, not how the
+method performs on real data. Results on the public datasets are in `results/` and
+`results_v3/`.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+`tests/test_core.py` covers the Wilson and conformal helpers, every corruption operator,
+the paging tests, the online contract check (including row independence and chunking) and
+the rate check, all on seeded synthetic data. `tests/test_check_package.py` covers the
+file inventory. These tests check behaviour of the code, not the paper's numbers. CI runs
+them on Python 3.11 and 3.13.
+
 ## Data (never commit data files)
 
 Put the files under `data/`:
