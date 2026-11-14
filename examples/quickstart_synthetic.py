@@ -4,7 +4,7 @@ Runs in a few seconds with no datasets. Everything here is generated, so it show
 the pieces connect, not how the method performs on real data.
 
     python3 examples/quickstart_synthetic.py            # prints a summary
-    python3 examples/quickstart_synthetic.py --fig docs/quickstart_synthetic.png
+    python3 examples/quickstart_synthetic.py --fig docs/quickstart_synthetic.svg
 """
 from __future__ import annotations
 
@@ -65,16 +65,22 @@ def plot(contract, bad, bad_res, pages, path):
     t = np.arange(n)
     fig, ax = plt.subplots(3, 1, figsize=(10, 7.2), sharex=True,
                            gridspec_kw={"height_ratios": [2.2, 1, 1]})
-    ax[0].plot(t, bad[:, 1], lw=0.5, color="#4c78a8")
+    blk = 50                                   # min/max band per block keeps the file small
+    nb = n // blk
+    seg = bad[: nb * blk, 1].reshape(nb, blk)
+    mid = np.arange(nb) * blk + blk / 2
+    ax[0].fill_between(mid, seg.min(1), seg.max(1), color="#4c78a8", lw=0, alpha=0.8,
+                       label="stream (min/max per 50 requests)")
     ax[0].axvspan(FAULT_START, FAULT_END, color="#e45756", alpha=0.10, label="fault window")
     ax[0].axhline(contract.env_hi[1], ls="--", lw=0.8, color="#555", label="learned envelope")
     ax[0].axhline(contract.env_lo[1], ls="--", lw=0.8, color="#555")
     hit = np.unique(bad_res.viol_rows[bad_res.viol_cols == 1])
-    ax[0].scatter(hit, bad[hit, 1], s=7, color="#e45756", zorder=3, label="contract violation")
+    if not path.endswith(".svg"):              # per-point markers bloat SVG; keep them for PNG
+        ax[0].scatter(hit, bad[hit, 1], s=7, color="#e45756", zorder=3, label="contract violation")
     ax[0].set_ylabel("amount_x2")
     ax[0].set_title("Synthetic stream: one feature loses its relation to its neighbours")
     ax[0].set_ylim(top=float(contract.env_hi[1]) * 1.25)
-    ax[0].legend(loc="upper left", fontsize=8, frameon=False, ncol=3)
+    ax[0].legend(loc="upper left", fontsize=8, frameon=False, ncol=2)
 
     cnt = np.zeros(n // 100)
     np.add.at(cnt, hit // 100, 1)
