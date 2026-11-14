@@ -30,7 +30,7 @@ flowchart TB
 
 ```bash
 pip install numpy scipy scikit-learn matplotlib
-python3 examples/quickstart_synthetic.py --fig docs/quickstart_synthetic.png
+python3 examples/quickstart_synthetic.py --fig docs/quickstart_synthetic.svg
 ```
 
 The script learns a contract on a small generated stream, then swaps in values from
@@ -39,7 +39,7 @@ individually plausible, so a range check sees nothing; the break shows up in the
 relation between `amount` and `amount_x2`. The figure shows the violations and the
 pages raised.
 
-![Synthetic quickstart: violations and pages during a fault window](docs/quickstart_synthetic.png)
+![Synthetic quickstart: violations and pages during a fault window](docs/quickstart_synthetic.svg)
 
 Everything in the figure is generated. It shows how the pieces connect, not how the
 method performs on real data. Results on the public datasets are in `results/` and
