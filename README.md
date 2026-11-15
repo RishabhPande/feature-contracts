@@ -57,6 +57,14 @@ the rate check, all on seeded synthetic data. `tests/test_check_package.py` cove
 file inventory. These tests check behaviour of the code, not the paper's numbers. CI runs
 them on Python 3.11 and 3.13.
 
+`tests/test_stream_inputs.py` covers stream shape and chunk validation.
+`FeatureContract.check()` and `.score()` require a two-dimensional NumPy array
+with the same feature count used during fitting, in the same column order.
+`chunk` must be a positive integer (not a boolean). Invalid chunk sizes and
+mismatched shapes raise `ValueError` before any rows are processed. Empty
+streams with the correct feature count are supported. This shape check cannot
+detect reordered columns; keep their meaning and order aligned with the fit data.
+
 ## Data (never commit data files)
 
 Put the files under `data/`:

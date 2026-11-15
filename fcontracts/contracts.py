@@ -8,6 +8,7 @@ streams with hundreds of features fit in memory.
 from __future__ import annotations
 
 import math
+from numbers import Integral
 import numpy as np
 from scipy import stats
 from sklearn.covariance import LedoitWolf
@@ -248,8 +249,21 @@ class FeatureContract:
         self.version = f"c1{abs(hash((self.q, d))) % 10**8:08d}"
         return self
 
+    def _validate_stream(self, X, chunk):
+        """Reject skipped work and mismatched schemas before checking any rows."""
+        if isinstance(chunk, (bool, np.bool_)) or not isinstance(chunk, Integral) or chunk <= 0:
+            raise ValueError("chunk must be a positive integer")
+        if not isinstance(X, np.ndarray) or X.ndim != 2:
+            raise ValueError("X must be a two-dimensional NumPy array")
+        if X.shape[1] != self.d:
+            raise ValueError(f"X must have {self.d} features; got {X.shape[1]}")
+
     def score(self, X, chunk=20000):
-        """Per-request single score (requires the conformal1 fit or a fitted b)."""
+        """Per-request single score (requires the conformal1 fit or a fitted b).
+
+        X must have the fitted feature count; chunk must be a positive integer.
+        """
+        self._validate_stream(X, chunk)
         out = np.zeros(X.shape[0])
         for a in range(0, X.shape[0], chunk):
             Xc = X[a:a + chunk]
@@ -311,6 +325,8 @@ class FeatureContract:
 
     # ------------------------------------------------------------------ check
     def check(self, X, chunk=20000, use_relations=True):
+        """Check a 2D array with the fitted feature count in positive-sized chunks."""
+        self._validate_stream(X, chunk)
         n, d = X.shape
         out = StreamResult(n)
         for a in range(0, n, chunk):
