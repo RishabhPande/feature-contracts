@@ -57,6 +57,12 @@ the rate check, all on seeded synthetic data. `tests/test_check_package.py` cove
 file inventory. These tests check behaviour of the code, not the paper's numbers. CI runs
 them on Python 3.11 and 3.13.
 
+`tests/test_fit_inputs.py` covers fitting-slice validation and invalid refits.
+`FeatureContract.fit()` requires nonempty two-dimensional NumPy arrays with
+matching feature counts. Shape errors raise `ValueError` before changing an
+existing contract. Missing values and noncontiguous slices remain supported.
+This is a shape guard, not a check of numeric values or column meaning.
+
 `tests/test_stream_inputs.py` covers stream shape and chunk validation.
 `FeatureContract.check()` and `.score()` require a two-dimensional NumPy array
 with the same feature count used during fitting, in the same column order.
