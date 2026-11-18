@@ -82,6 +82,18 @@ class FeatureContract:
 
     # ------------------------------------------------------------------ learn
     def fit(self, X_fit, X_cal):
+        """Learn from nonempty 2D NumPy slices with equal feature counts.
+
+        Shape errors are rejected before changing any fitted state. Missing
+        values remain supported; this does not validate column semantics.
+        """
+        for name, X in (("X_fit", X_fit), ("X_cal", X_cal)):
+            if not isinstance(X, np.ndarray) or X.ndim != 2:
+                raise ValueError(f"{name} must be a two-dimensional NumPy array")
+            if X.shape[0] == 0 or X.shape[1] == 0:
+                raise ValueError(f"{name} must have at least one row and one feature")
+        if X_fit.shape[1] != X_cal.shape[1]:
+            raise ValueError("X_fit and X_cal must have the same feature count")
         X_ref = np.vstack([X_fit, X_cal])
         d = X_fit.shape[1]
         self.d = d
