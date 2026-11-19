@@ -61,7 +61,9 @@ def top3_from_evidence(ev, viol):
     order = np.argsort(-vals, axis=1)
     idx = np.take_along_axis(idx, order, 1)
     vals = np.take_along_axis(vals, order, 1)
-    idx = np.where(np.isfinite(vals), idx, -1)
+    # Only padding (-inf) and unavailable (NaN) evidence lack a feature.
+    # Positive infinity is valid evidence, for example an infinite input.
+    idx = np.where(vals > -np.inf, idx, -1)
     out = np.full((e.shape[0], 3), -1, np.int32)
     out[:, :k] = idx
     return out
