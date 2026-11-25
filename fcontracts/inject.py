@@ -24,6 +24,19 @@ def reference_stats(X_ref):
 
 def inject(Xw, fault, features, prevalence, rng, ref, scale=None, clip_q=None,
            noise_sd=None, pool=None, lag=1000):
+    try:
+        prevalence = float(prevalence)
+    except (TypeError, ValueError):
+        raise ValueError("prevalence must be a real number in (0, 1]") from None
+    if not 0 < prevalence <= 1:
+        raise ValueError("prevalence must be a real number in (0, 1]")
+    features = list(features)
+    if not features:
+        raise ValueError("features must name at least one column")
+    d = Xw.shape[1]
+    for j in features:
+        if isinstance(j, bool) or not isinstance(j, (int, np.integer)) or not 0 <= j < d:
+            raise ValueError(f"feature index {j!r} is not an integer column in [0, {d})")
     X = Xw.copy()
     n = X.shape[0]
     k = max(1, int(round(prevalence * n)))
